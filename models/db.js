@@ -5,11 +5,11 @@ const sequelize = new Sequelize('registro', 'root', '123456', {
     dialect: 'mysql'
 });
 
-try {
-    await sequelize.authenticate();
-    console.log('Connection has been estabilished sucessfully.');
-} catch (error) {
-    console.error('Unable to connect to the database:', error);
-}
+sequelize.authenticate()
+.then(function(){
+    console.log('Connection has been estabilished sucessfully.')
+}).catch(function(){
+    console.log('Unable to connect to the database.')
+});
 
 module.exports = sequelize;
