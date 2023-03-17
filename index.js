@@ -1,6 +1,8 @@
 const express = require('express');
 const server = express();
 
+const db = require('./models/db');
+
 server.use(express.json());
 
 const transferencias = {
@@ -46,4 +48,6 @@ server.delete('/transferencias/:index', (req, res) => {
     return res.json({ message: 'A transferência foi apagada com sucesso.' });
 });
 
-server.listen(3000);
+server.listen(3000, () => {
+    console.log("Servidor iniciado na porta 3000.")
+});
