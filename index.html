@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Formulário</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="forms">FORMULÁRIO</h1>
+        <form action="#">
+            <div class="input_box">
+                <input type="text" name="nome" id="nome" required>
+                <label for="nome">Nome</label>
+            </div>
+            <div class="input_box">
+                <input type="text" name="email" id="email" required>
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input_box">
+                <input type="text" name="empresa" id="empresa" required>
+                <label for="empresa">Empresa</label>
+            </div>
+            <div class="input_box">
+                <input type="text" name="cpf_cnpj" id="cpf_cnpj" required>
+                <label for="cpf_cnpj">CPF / CNPJ</label>
+            </div>
+            <div class="input_box">
+                <input type="number" name="valor" id="valor" required>
+                <label for="valor">Valor</label>
+            </div>
+            <div class="input_box">
+                <input type="date" name="data" id="data" required>
+            </div>
+            <div class="input_box">
+                <input type="text" name="destino" id="destino" required>
+                <label for="destino">Destinatário</label>
+            </div>
+                <input type="submit" id="submit" value="Enviar">
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
