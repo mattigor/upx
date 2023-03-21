@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+.input_box {
+    position: relative;
+    width: 300px;
+}
+.input_box input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: transparent;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+}
+.input_box label {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 1rem;
+    color: black;
+    pointer-events: none;
+    transition: 150ms;
+}
+input[type=date] {
+    text-transform: uppercase;
+}
+.input_box input:valid ~ label,
+.input_box input:focus ~ label {
+    transform: translateX(5px) translateY(-13px);
+    font-size: .55rem;
+    font-weight: 600;
+    padding: 10px 10px;
+    background: transparent;
+}
+.input_box input:valid,
+.input_box input:focus {
+    color: black;
+}
+#submit {
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    border: 2px solid black;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 200ms;
+}
+#submit:hover {
+    background-color: black;
+    color: white;
+}
