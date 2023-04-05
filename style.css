@@ -5,6 +5,42 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+::selection {
+    background: black;
+    color: white;
+}
+/* navbar */
+header {
+	background-color: black;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.logo {
+    margin-left: 100px;
+}
+nav ul {
+	display: flex;
+	list-style: none;
+}
+nav li {
+	margin: 0 10px;
+	font-size: .87rem;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+    text-transform: uppercase;
+    transition: 150ms;
+}
+nav a:hover {
+	background-color: #fff;
+	color: #333;
+}
+/* forms */
 .container {
     display: flex;
     justify-content: center;
