@@ -102,15 +102,6 @@ p {
     #art-inicio p {
     font-size: 1.3em;
     }
-    
-    Com essas alterações, a imagem de fundo ficará fixa apenas dentro da section correspondente, e a rolagem da página irá afetar apenas o conteúdo da section, não afetando a posição da imagem de fundo.
-    
-    
-    
-    
-    
-    
-    
 /* empresas */
 #sec-empresas {
     background-color: #FFF;
