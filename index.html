@@ -29,46 +29,105 @@
 		    </div>
 		<nav>
 			<ul>
-				<li><a href="#">Início</a></li>
-				<li><a href="#">Empresas</a></li>
-				<li><a href="#">Localidades</a></li>
-				<li><a href="#">Contribua</a></li>
+				<li><a href="#sec-inicio">Início</a></li>
+				<li><a href="#sec-empresas">Empresas</a></li>
+				<li><a href="#sec-localidades">Localidades</a></li>
+				<li><a href="#sec-contribua">Contribua</a></li>
 			</ul>
 		</nav>
 	</header>
-    <div class="container">
-        <h1 class="forms">FORMULÁRIO</h1>
-        <form action="#">
-            <div class="input_box">
-                <input type="text" name="nome" id="nome" required>
-                <label for="nome">Nome</label>
+    <section id="sec-inicio">
+        <article id="art-inicio">
+            <h1>INÍCIO</h1>
+        </article>
+    </section>
+    <section id="sec-empresas">
+        <article id="art-empresas">
+            <div class="esquerda">
+                <h3>• Médicos sem fronteiras</h3>
+                <p>A organização que fornece ajuda médica de emergência em áreas afetadas por conflitos armados, desastres naturais e epidemias. A organização é composta por profissionais da saúde, incluindo médicos, enfermeiros e especialistas em saúde mental. O Médico sem Fronteiras financia suas operações por meio de doações de indivíduos e instituições.</p><br>
+                <h3>• Cruz Vermelha Brasileira</h3>
+                <p>Organização humanitária que presta assistência a pessoas que foram vítimas de desastres naturais e conflitos armados ou que estão em situação de vulnerabilidade. A organização oferece serviços de saúde, água potével, alimentos, abrigo e apoio emocional.</p><br>
+                <h3>• Amigos do Bem</h3>
+                <p>Organização sem fins lucrativos que tem como objetivo combater a pobreza e a fome no Nordeste do Brasil. Ela atua em áreas rurais e oferece educação, alimentação, saúde e infraestrutura básica para as comunidades mais carentes.</p>
             </div>
-            <div class="input_box">
-                <input type="text" name="email" id="email" required>
-                <label for="email">E-mail</label>
+            <div class="direita">
+                <h3>• Associação de Assistência à Criança Deficiente (AACD)</h3>
+                <p>É uma organização atua na reabilitação e inclusão de pessoas com deficiência. A organização oferece tratamento médico, terapia e assistência social para crianças e adultos com deficiência.</p><br>
+                <h3>• Instituto Ayrton Senna</h3>
+                <p>É uma organização sem fins lucrativos que tem como objetivo melhorar a qualidade da educação no Brasil. A organização oferece programas de capacitação para professores, materiais educativos e apoio para escolas em todo o país.</p><br>
+                <h3>• Gerando Falcões</h3>
+                <p>Organização que busca transformar a realidade de comunidades carentes, através de projetos de educação, esporte, cultura e empreendedorismo.</p><br>
+                <h3>• WWF-Brasil</h3>
+                <p>Organização que atua pela conservação da natureza, realizando projetos de proteção a espécies ameaçadas, preservação de ecossistemas e mitigação das mudanças climáticas.</p>
             </div>
-            <div class="input_box">
-                <input type="text" name="empresa" id="empresa" required>
-                <label for="empresa">Empresa</label>
+        </article>
+    </section>
+    <section id="sec-localidades">
+        <article id="art-localidades">
+            <div class="esquerda">
+                <h3>Médicos sem fronteiras</h3>
+                <p>• Rio de Janeiro (RJ)</p><br>
+                <h3>Cruz Vermelha Brasileira</h3>
+                <p>• Rio de Janeiro (RJ)</p><br>
+                <h3>Amigos do Bem</h3>
+                <p>• São Paulo (SP)</p><br>
+                <h3>Associação de Assistência à Criança Deficiente (AACD)</h3>
+                <p>• São Paulo (SP)</p><br>
+                <h3>Instituto Ayrton Senna</h3>
+                <p>• Pinheiros (SP)</p><br>
+                <h3>Gerando Falcões</h3>
+                <p>• Poá (SP)</p><br>
+                <h3>WWF-Brasil</h3>
+                <p>• Brasília (DF)</p>
             </div>
-            <div class="input_box">
-                <input type="text" name="cpf_cnpj" id="cpf_cnpj" required>
-                <label for="cpf_cnpj">CPF / CNPJ</label>
+            <div class="direita">
+                <figure>
+                    <img src="./images/mapa.png" alt="">
+                </figure>
             </div>
-            <div class="input_box">
-                <input type="number" name="valor" id="valor" required>
-                <label for="valor">Valor</label>
-            </div>
-            <div class="input_box">
-                <input type="date" name="data" id="data" required>
-            </div>
-            <div class="input_box">
-                <input type="text" name="destino" id="destino" required>
-                <label for="destino">Destinatário</label>
-            </div>
-            <input type="submit" id="submit" value="Enviar">
-        </form>
-    </div>
+        </article>
+    </section>
+    <section id="sec-contribua">
+        <article id="art-contribua">
+            <h1 class="forms">FORMULÁRIO</h1>
+            <form action="#">
+                <div class="input_box">
+                    <input type="text" name="nome" id="nome" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="email" id="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="empresa" id="empresa" required>
+                    <label for="empresa">Empresa</label>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="cpf_cnpj" id="cpf_cnpj" required>
+                    <label for="cpf_cnpj">CPF / CNPJ</label>
+                </div>
+                <div class="input_box">
+                    <input type="number" name="valor" id="valor" required>
+                    <label for="valor">Valor</label>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="banco" id="banco" required>
+                    <label for="banco">Banco</label>
+                </div>
+                <div class="input_box">
+                    <input type="date" name="data" id="data" required>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="destino" id="destino" required>
+                    <label for="destino">Destinatário</label>
+                </div>
+                <input type="submit" id="submit" value="Enviar">
+            </form>
+        </article>
+    </section>
+    <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>
