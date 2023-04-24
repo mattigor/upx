@@ -20,6 +20,7 @@ header {
 	padding: 0 20px;
     position: fixed;
     width: 100%;
+    z-index: 10000000000;
 }
 .logo {
     margin-left: 100px;
@@ -67,7 +68,49 @@ p {
 /* início */
 #sec-inicio {
     background-color: #EEE;
-}
+    position: relative;
+    }
+    .fundo {
+    background-image: url(./images/ourlogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 3%;
+    }
+    .icone {
+    display: inline-block;
+    }
+    .icone-background {
+    height: 500px;
+    width: 1119px;
+    }
+    #art-inicio {
+    text-align: center;
+    height: 300px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    }
+    #art-inicio h1 {
+    font-size: 5em;
+    margin-bottom: 30px;
+    }
+    #art-inicio p {
+    font-size: 1.3em;
+    }
+    
+    Com essas alterações, a imagem de fundo ficará fixa apenas dentro da section correspondente, e a rolagem da página irá afetar apenas o conteúdo da section, não afetando a posição da imagem de fundo.
+    
+    
+    
+    
+    
+    
+    
 /* empresas */
 #sec-empresas {
     background-color: #FFF;
